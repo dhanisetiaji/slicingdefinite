@@ -1,0 +1,193 @@
+.main-section{
+    .banner{
+        img{
+            width: 100%;
+            height: 408px;
+            object-fit: cover;
+        }
+    }
+    .container{
+        .dealers{
+            display: flex;
+            flex-wrap: wrap;
+            height:auto;
+            // background-color: red;
+            justify-content: center;
+            .dealer{
+                width: 45%;
+                // background-color: blue;
+                align-self: center;
+                margin: 1em;
+
+                .title{
+                    font-size: 48px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 62px;
+                }
+
+                p{
+                    justify-content: center;
+                    font-size: 16px;
+                }
+            }
+            
+        }
+
+        .locations{
+            margin-left: 3rem;
+            width: 50%;
+
+            .iconSearch{
+                position: relative;
+                top: 2.4rem;
+                left: 1rem;
+                color: #000;
+                font-size: 20px;
+            }
+            p{
+                margin:0;
+                font-weight: 500;
+                font-size: 20px;
+                color: #9B9B9B;
+            }
+
+            select{
+                width: 100%;
+                height: 3rem;
+                border: 1px solid #9B9B9B;
+                padding: 0 2.5rem;
+                font-size: 16px;
+                color: var(--primary);
+                cursor: pointer;
+                outline: none;
+            }
+        }
+
+        .info-section{
+            margin:3em 0;
+            height:25em;
+            img{
+                object-fit: inherit;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .main-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+            height: auto;
+            
+
+            .content{
+                cursor: pointer;
+                width: 32%;
+                margin: 1em 0;
+                background-color: #F1F1F1;
+                border-radius: 20px;
+
+                h4{
+                    text-align: center;
+                }
+
+                .itemContent{
+                    display:flex;
+                    padding:1em;
+
+                    .item{
+                        img{
+                            width:40px;
+                            height:40px;
+                        }
+                    }
+                    // justify-content: space-between;
+                    .title{
+                        font-size:20px;
+                        font-weight: 700;
+                    }
+                    .address{
+                        margin:3px 0;
+                        font-size: 16px;
+                        color: #4C4C4C;
+                        height: 50px;
+                    }
+                    .service{
+                        display: flex;
+                        flex-direction: row;
+                        margin-top:2em;
+
+                        .itemService{
+                            text-transform: uppercase;
+                            display: flex;
+                            font-size: 10px;
+                            color:#4C4C4C;
+                            font-weight: 600;
+
+                            .bulletService{
+                                margin:0 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-section{
+        .banner{
+            img{
+                height: 15rem;
+            }
+        }
+
+        .container{
+            .dealers{
+                display: flex;
+                flex-wrap: wrap;
+                height:auto;
+                justify-content: center;
+                .dealer{
+                    width: 100%;
+                    margin: 1em;
+                    text-align: justify;
+                }
+            }
+
+            .locations{
+                margin-top: 3em;
+                margin-left: 0;
+                width: 100%;
+
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            .info-section{
+                margin:3em 0;
+                height:200px;
+                img{
+                    object-fit: inherit;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 413px) {
+    .main-section{
+        .banner{
+            img{
+                height: 12rem;
+            }
+        }
+    }    
+}

@@ -1,0 +1,86 @@
+nav {
+    background: #000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .navmenu {
+        display: flex;
+        align-items:center;
+        width: 100%;
+        justify-content: flex-end;
+        height: 100%;
+
+        .navlinks {
+            color: #fff;
+            height: 100%;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 0 1.5em;
+            cursor: pointer;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                .card {
+                    display: block;
+                }
+            }
+            
+
+            .card {
+                display: none;
+                position: absolute;
+                top: 4.2em;
+                width: auto;
+                height: 100px;
+                background: #000;
+
+                p {
+                    text-transform: capitalize;
+                    padding: 1rem;
+                    margin:0;
+                    &:hover {
+                        background: rgb(45, 45, 45);
+                    }
+                }
+            }
+
+            .icon{
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+        img {
+            width: 100px;
+            height: 30px;
+        }
+    }
+    .navicon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        .icon {
+            color: #FF3C51;
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navmenu {
+        display: none!important;
+    }
+    nav{
+        justify-content: space-between;
+    }
+}
+  
