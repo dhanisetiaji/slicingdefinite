@@ -137,7 +137,55 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    .main-section{
+        .banner{
+            img{
+                height: 15rem;
+            }
+        }
 
+        .container{
+            .dealers{
+                display: flex;
+                flex-wrap: wrap;
+                height:auto;
+                justify-content: center;
+                .dealer{
+                    width: 100%;
+                    margin: 1em;
+                    text-align: justify;
+                }
+            }
+
+            .locations{
+                margin-top: 3em;
+                margin-left: 0;
+                width: 100%;
+
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            .info-section{
+                margin:3em 0;
+                height:200px;
+                img{
+                    object-fit: inherit;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .main-content {
+                justify-content: space-evenly;
+                .content {
+                    width: 45%;
+                }
+            }
+        }
+    }   
+}
 @media screen and (max-width: 768px) {
     .main-section{
         .banner{
@@ -176,6 +224,12 @@
                     object-fit: inherit;
                     width: 100%;
                     height: 100%;
+                }
+            }
+            .main-content {
+                flex-direction: column;
+                .content {
+                    width: 100%;
                 }
             }
         }
